@@ -1,5 +1,4 @@
-	import { useState } from 'react';
-import { HelloWorld } from './HelloWorld';
+	import { HelloWorld } from './HelloWorld';
 import { Button } from './Button';
 import * as stylex from '@stylexjs/stylex';
 import { colors, spacing } from './tokens.stylex';
@@ -26,7 +25,7 @@ const styles = stylex.create({
 });
 
 function App() {
-  const [isNight, setIsNight] = useState(false);
+  const isNight = false;
 
   return (
     <div {...stylex.props(styles.container, isNight && night)}>
@@ -57,4 +56,3 @@ function App() {
 }
 
 export default App;
-
